@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { LiaCopyrightSolid } from 'react-icons/lia'
 
@@ -6,13 +7,16 @@ import { LiaCopyrightSolid } from 'react-icons/lia'
 // redirect to media
 const Footer = () => {
   return (
-    <div className='space-between flex'>
-      <div className='ml-120 flex items-center text-lg 2xl:px-16'>
+    <div className='flex h-full w-full items-center justify-between 2xl:px-10'>
+      <div className='ml-120 flex items-center text-sm'>
         <LiaCopyrightSolid className='mx-3' />
         <p>2025 | Juan Estrada</p>
       </div>
-      <button className='rounded-lg border border-gray-500 px-4 py-2 text-lg text-gray-500 transition hover:bg-gray-100'>
-        ↑ Go to top
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className='mr-120 cursor-pointer rounded-lg border border-gray-300 px-4 py-1 text-sm text-gray-400 transition hover:bg-gray-200'
+      >
+        Back to top
       </button>
     </div>
   )

@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import cat from '../public/cat.svg'
+import catLight from '../public/catLight.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FiMoon } from 'react-icons/fi'
@@ -10,9 +11,9 @@ const Navbar = () => {
   const [darkMode, setDarkMode] = useState(true)
 
   return (
-    <nav className='fixed h-20 w-full shadow-xl'>
+    <nav className='firefox:bg-opacity-90" sticky top-0 z-10 backdrop-blur-lg backdrop-filter'>
       <div className='flex h-full w-full items-center justify-between px-4 2xl:px-16'>
-        <div className='ml-120'>
+        <div className='ml-120 flex h-18 w-18 items-center justify-center rounded-full bg-gray-300'>
           <Link href={'/'}>
             <Image
               src={cat}
@@ -26,21 +27,22 @@ const Navbar = () => {
         </div>
         <div className='mr-120 flex items-center'>
           <ul className='hidden sm:flex'>
-            <Link href={'/projects'}>
-              <div className='flex items-center justify-center rounded-md py-1 hover:bg-gray-200'>
-                <li className='mx-5 list-none text-lg'>Projects</li>
-              </div>
-            </Link>
             <Link href={'/work'}>
               <div className='flex items-center justify-center rounded-md py-1 hover:bg-gray-200'>
-                <li className='mx-5 text-lg'>Work</li>
+                <li className='mx-3 text-lg'>Work</li>
               </div>
             </Link>
             <Link href={'/education'}>
               <div className='flex items-center justify-center rounded-md py-1 hover:bg-gray-200'>
-                <li className='mx-5 text-lg'>Education</li>
+                <li className='mx-3 text-lg'>Education</li>
               </div>
             </Link>
+            <Link href={'/projects'}>
+              <div className='flex items-center justify-center rounded-md py-1 hover:bg-gray-200'>
+                <li className='mx-3 list-none text-lg'>Projects</li>
+              </div>
+            </Link>
+
             <div
               className='flex items-center justify-center rounded-md py-1 hover:bg-gray-200'
               onClick={() => setDarkMode(!darkMode)}

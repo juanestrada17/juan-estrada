@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 export default function Home() {
   return (
     <>
-      <section className='mr-120 ml-120 py-40'>
+      <section className='mr-120 ml-120 py-20'>
         <div className='container'>
           <h1 className='text-md font-bold'>Juan Estrada</h1>
           <h2 className='text-lg font-bold'>Software Developer</h2>
@@ -71,13 +71,19 @@ export default function Home() {
             <h1 className='text-lg font-bold'> Let's connect </h1>
 
             <p className='mt-4'>
-              This is my social media. If you want to ask me questions about
-              anything feel free to reach out!
+              This is my professional social media. If you want to ask me
+              questions about anything feel free to reach out!
             </p>
 
             <div className='mt-2 flex justify-start'>
-              <FaLinkedin className='mx-1 h-6 w-6 text-xl'></FaLinkedin>
-              <FaGithub className='text mx-1 h-6 w-6'></FaGithub>
+              <Link
+                href={'https://www.linkedin.com/in/juan-estrada-a72959125/'}
+              >
+                <FaLinkedin className='mx-1 h-6 w-6 cursor-pointer text-xl'></FaLinkedin>
+              </Link>
+              <Link href={'https://github.com/juanestrada17'}>
+                <FaGithub className='text mx-1 h-6 w-6 cursor-pointer'></FaGithub>
+              </Link>
             </div>
           </div>
         </div>
