@@ -1,0 +1,22 @@
+1. Create a navbar that contains (blur contant navbar)
+     0. icon (optional-logo)
+     1. work link
+     2  projects link
+     3. education link
+     4. dark mode / light mode toggle
+
+2. Home page
+    0. Short summary of dev
+    1. short work summary, outstanding one 
+    2. projects -> links to git hub (add images optional)
+    3. Let's connect call
+    4. Icons to social media
+    5. email 
+    6. back to top (in all pages)
+    7. @ creation date | name 
+3. Projects 
+    0. list of projects with links
+4. Work 
+    0. in depth description of work 
+5. Education 
+    0. in depth descripion of education 
