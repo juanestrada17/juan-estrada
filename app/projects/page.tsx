@@ -5,7 +5,7 @@ import avatarSel from '../../public/avatarSel.png'
 import affirm from '../../public/affirm.png'
 import jornalIntro from '../../public/journal.png'
 import Link from 'next/link'
-import { FaGithub, FaLocationArrow } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 
 export default function Projects() {
   return (
