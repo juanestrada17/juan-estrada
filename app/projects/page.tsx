@@ -63,7 +63,7 @@ export default function Projects() {
           <div className='mt-4 border-b border-gray-300'></div>
           <div className='mt-2 flex flex-col'>
             <Link
-              className='group duration-300" rounded-lg p-4 transition-colors hover:bg-gray-200'
+              className='group duration-300" rounded-lg p-4 transition-colors hover:bg-gray-200 dark:hover:bg-gray-600'
               href={'https://github.com/juanestrada17/DSA'}
             >
               <h2 className='mt-10 text-lg font-bold'>

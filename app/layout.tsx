@@ -25,9 +25,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' className='h-full'>
+    <html lang='en' className='hover:dark:text-white"'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} mr-120 ml-120 flex min-h-screen flex-col antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} mr-120 ml-120 flex min-h-screen flex-col bg-white`}
       >
         <Navbar />
         <main className='flex-1'>{children} </main>

@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className='cursor-pointer rounded-lg border border-gray-300 px-4 py-1 text-sm text-gray-400 transition hover:bg-gray-200'
+        className='cursor-pointer rounded-lg border border-gray-300 px-4 py-1 text-sm text-gray-400 transition hover:bg-gray-200 dark:hover:bg-gray-600'
       >
         Back to top
       </button>

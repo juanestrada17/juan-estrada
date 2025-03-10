@@ -32,7 +32,7 @@ export default function Home() {
               <h1 className='text-md font-bold'>Work</h1>
               <Link
                 href={'/work'}
-                className='cursor-pointer font-bold hover:bg-gray-200'
+                className='cursor-pointer font-bold hover:bg-gray-200 dark:hover:bg-gray-600'
               >
                 See all work
               </Link>
