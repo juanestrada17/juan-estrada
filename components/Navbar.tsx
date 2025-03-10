@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from 'react'
 import cat from '../public/cat.svg'
-import catLight from '../public/catLight.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FiMoon } from 'react-icons/fi'
@@ -13,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className='firefox:bg-opacity-90" sticky top-0 z-10 backdrop-blur-lg backdrop-filter'>
       <div className='flex h-full w-full items-center justify-between px-4 2xl:px-16'>
-        <div className='ml-120 flex h-18 w-18 items-center justify-center rounded-full bg-gray-300'>
+        <div className='flex h-18 w-18 items-center justify-center rounded-full bg-gray-300'>
           <Link href={'/'}>
             <Image
               src={cat}
@@ -25,7 +24,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className='mr-120 flex items-center'>
+        <div className='flex items-center'>
           <ul className='hidden sm:flex'>
             <Link href={'/work'}>
               <div className='flex items-center justify-center rounded-md py-1 hover:bg-gray-200'>

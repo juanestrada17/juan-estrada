@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 export default function Home() {
   return (
     <>
-      <section className='mr-120 ml-120 py-20'>
+      <section className='py-20'>
         <div className='container'>
           <h1 className='text-md font-bold'>Juan Estrada</h1>
           <h2 className='text-lg font-bold'>Software Developer</h2>
