@@ -46,7 +46,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className='flex items-center'>
-          <ul className='hidden sm:flex'>
+          <ul className='flex sm:flex'>
             <Link href={'/work'}>
               <div className='flex items-center justify-center rounded-md py-1 hover:bg-gray-200 dark:hover:bg-gray-600'>
                 <li className='mx-3 text-lg'>Work</li>
